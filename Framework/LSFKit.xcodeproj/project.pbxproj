@@ -10,6 +10,12 @@
 		8F450B0D1E32153A0040238E /* LSFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B0C1E32153A0040238E /* LSFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F450B0F1E3215BE0040238E /* LSFLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014A1E31DFEE000755A4 /* LSFLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F450B101E3215CB0040238E /* LSF_AppMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B0E1E3215820040238E /* LSF_AppMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F450B151E3217050040238E /* LSFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B131E3217050040238E /* LSFViewController.h */; };
+		8F450B161E3217050040238E /* LSFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F450B141E3217050040238E /* LSFViewController.m */; };
+		8F450B191E32173E0040238E /* LSFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B171E32173E0040238E /* LSFNavigationController.h */; };
+		8F450B1A1E32173E0040238E /* LSFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F450B181E32173E0040238E /* LSFNavigationController.m */; };
+		8F450B1D1E3217A40040238E /* LSFTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B1B1E3217A40040238E /* LSFTableViewController.h */; };
+		8F450B1E1E3217A40040238E /* LSFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F450B1C1E3217A40040238E /* LSFTableViewController.m */; };
 		8F7B01451E31DF7E000755A4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B01441E31DF7E000755A4 /* Info.plist */; };
 		8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014B1E31E089000755A4 /* LSFLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F7B014E1E31E089000755A4 /* LSFLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B014C1E31E089000755A4 /* LSFLogManager.m */; };
@@ -18,6 +24,12 @@
 /* Begin PBXFileReference section */
 		8F450B0C1E32153A0040238E /* LSFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFKit.h; sourceTree = "<group>"; };
 		8F450B0E1E3215820040238E /* LSF_AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSF_AppMacros.h; sourceTree = "<group>"; };
+		8F450B131E3217050040238E /* LSFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFViewController.h; sourceTree = "<group>"; };
+		8F450B141E3217050040238E /* LSFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFViewController.m; sourceTree = "<group>"; };
+		8F450B171E32173E0040238E /* LSFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFNavigationController.h; sourceTree = "<group>"; };
+		8F450B181E32173E0040238E /* LSFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFNavigationController.m; sourceTree = "<group>"; };
+		8F450B1B1E3217A40040238E /* LSFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFTableViewController.h; sourceTree = "<group>"; };
+		8F450B1C1E3217A40040238E /* LSFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFTableViewController.m; sourceTree = "<group>"; };
 		8F7B01391E31DEF2000755A4 /* LSFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LSFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7B01441E31DF7E000755A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F7B014A1E31DFEE000755A4 /* LSFLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFLog.h; sourceTree = "<group>"; };
@@ -36,6 +48,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F450B111E3216F70040238E /* LSFClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8F450B121E3216F70040238E /* Controllers */,
+			);
+			path = LSFClasses;
+			sourceTree = "<group>";
+		};
+		8F450B121E3216F70040238E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F450B131E3217050040238E /* LSFViewController.h */,
+				8F450B141E3217050040238E /* LSFViewController.m */,
+				8F450B171E32173E0040238E /* LSFNavigationController.h */,
+				8F450B181E32173E0040238E /* LSFNavigationController.m */,
+				8F450B1B1E3217A40040238E /* LSFTableViewController.h */,
+				8F450B1C1E3217A40040238E /* LSFTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8F7B012F1E31DEF2000755A4 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8F450B0C1E32153A0040238E /* LSFKit.h */,
+				8F450B111E3216F70040238E /* LSFClasses */,
 				8F7B01471E31DFB7000755A4 /* Base */,
 			);
 			name = LSFKit;
@@ -90,8 +124,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */,
+				8F450B1D1E3217A40040238E /* LSFTableViewController.h in Headers */,
 				8F450B0D1E32153A0040238E /* LSFKit.h in Headers */,
+				8F450B191E32173E0040238E /* LSFNavigationController.h in Headers */,
 				8F450B0F1E3215BE0040238E /* LSFLog.h in Headers */,
+				8F450B151E3217050040238E /* LSFViewController.h in Headers */,
 				8F450B101E3215CB0040238E /* LSF_AppMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,7 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F450B161E3217050040238E /* LSFViewController.m in Sources */,
 				8F7B014E1E31E089000755A4 /* LSFLogManager.m in Sources */,
+				8F450B1A1E32173E0040238E /* LSFNavigationController.m in Sources */,
+				8F450B1E1E3217A40040238E /* LSFTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
