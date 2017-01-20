@@ -9,7 +9,7 @@
 #ifndef LSFLog_h
 #define LSFLog_h
 
-
+#import "LSFLogManager.h"
 
 #ifdef DEBUG
 #define LSFLogI(format, ...) \
