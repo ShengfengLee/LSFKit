@@ -9,5 +9,10 @@
 #ifndef LSFKit_h
 #define LSFKit_h
 
+#import "LSFViewController.h"
+#import "LSFNavigationController.h"
+#import "LSFTableViewController.h"
 
+
+#import "NSURL+LSF.h"
 #endif /* LSFKit_h */
