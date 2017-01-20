@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LSFKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.4"
   s.summary      = "a collection of iOS components."
 
   # This description is used to generate tags and improve search results.
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ShengfengLee/LSFKit.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/ShengfengLee/LSFKit.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "UIKit", "CoreFoundation", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

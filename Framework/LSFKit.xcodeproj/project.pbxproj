@@ -10,7 +10,7 @@
 		8F7B01451E31DF7E000755A4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B01441E31DF7E000755A4 /* Info.plist */; };
 		8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014B1E31E089000755A4 /* LSFLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F7B014E1E31E089000755A4 /* LSFLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B014C1E31E089000755A4 /* LSFLogManager.m */; };
-		8F7B01561E31E7A6000755A4 /* LSFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B01551E31E7A6000755A4 /* LSFKit.h */; };
+		8F7B01561E31E7A6000755A4 /* LSFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B01551E31E7A6000755A4 /* LSFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
