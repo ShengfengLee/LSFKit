@@ -13,6 +13,9 @@
 #import "LSFNavigationController.h"
 #import "LSFTableViewController.h"
 
+#import "LSF_AppMacros.h"
 
 #import "NSURL+LSF.h"
+#import "NSData+LSF.h"
+#import "NSString+LSF.h"
 #endif /* LSFKit_h */

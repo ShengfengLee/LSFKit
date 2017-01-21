@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */; };
+		8F1639BD1E33031E0058B0C0 /* NSData+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1639BB1E33031E0058B0C0 /* NSData+LSF.m */; };
 		8F450B0D1E32153A0040238E /* LSFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B0C1E32153A0040238E /* LSFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F450B0F1E3215BE0040238E /* LSFLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014A1E31DFEE000755A4 /* LSFLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F450B101E3215CB0040238E /* LSF_AppMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B0E1E3215820040238E /* LSF_AppMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LSF.h"; sourceTree = "<group>"; };
+		8F1639BB1E33031E0058B0C0 /* NSData+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LSF.m"; sourceTree = "<group>"; };
 		8F450B0C1E32153A0040238E /* LSFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFKit.h; sourceTree = "<group>"; };
 		8F450B0E1E3215820040238E /* LSF_AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSF_AppMacros.h; sourceTree = "<group>"; };
 		8F450B131E3217050040238E /* LSFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFViewController.h; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 			children = (
 				8F450B211E3218F40040238E /* NSURL+LSF.h */,
 				8F450B221E3218F40040238E /* NSURL+LSF.m */,
+				8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */,
+				8F1639BB1E33031E0058B0C0 /* NSData+LSF.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */,
+				8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */,
 				8F450B0D1E32153A0040238E /* LSFKit.h in Headers */,
 				8F450B1D1E3217A40040238E /* LSFTableViewController.h in Headers */,
 				8F450B191E32173E0040238E /* LSFNavigationController.h in Headers */,
@@ -229,6 +236,7 @@
 			files = (
 				8F450B161E3217050040238E /* LSFViewController.m in Sources */,
 				8F7B014E1E31E089000755A4 /* LSFLogManager.m in Sources */,
+				8F1639BD1E33031E0058B0C0 /* NSData+LSF.m in Sources */,
 				8F450B241E3218F40040238E /* NSURL+LSF.m in Sources */,
 				8F450B1A1E32173E0040238E /* LSFNavigationController.m in Sources */,
 				8F450B1E1E3217A40040238E /* LSFTableViewController.m in Sources */,
