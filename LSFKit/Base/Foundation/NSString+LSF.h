@@ -22,7 +22,7 @@
 - (NSString *)lsf_stringByTrimmingSpace;
 
 //清除空格
-+ (NSString *)bb_stringByClearSpaceWithString:(NSString *)string;
++ (NSString *)lsf_stringByClearSpaceWithString:(NSString *)string;
 
 ///阿拉伯数字替换成中文字符
 -(NSString*)lsf_replaceNumbersWithChineseChar;
