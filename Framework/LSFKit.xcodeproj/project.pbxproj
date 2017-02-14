@@ -43,6 +43,7 @@
 		8F7B014A1E31DFEE000755A4 /* LSFLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFLog.h; sourceTree = "<group>"; };
 		8F7B014B1E31E089000755A4 /* LSFLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFLogManager.h; sourceTree = "<group>"; };
 		8F7B014C1E31E089000755A4 /* LSFLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFLogManager.m; sourceTree = "<group>"; };
+		8F996C841E528DB800988E8A /* LSFKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = LSFKit.podspec; path = ../LSFKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 			children = (
 				8F7B01461E31DFB7000755A4 /* LSFKit */,
 				8F7B01441E31DF7E000755A4 /* Info.plist */,
+				8F996C841E528DB800988E8A /* LSFKit.podspec */,
 				8F7B013A1E31DEF2000755A4 /* Products */,
 			);
 			sourceTree = "<group>";
