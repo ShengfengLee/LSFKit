@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */; };
+		8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F1639BD1E33031E0058B0C0 /* NSData+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1639BB1E33031E0058B0C0 /* NSData+LSF.m */; };
 		8F450B0D1E32153A0040238E /* LSFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B0C1E32153A0040238E /* LSFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F450B0F1E3215BE0040238E /* LSFLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014A1E31DFEE000755A4 /* LSFLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,7 +23,7 @@
 		8F7B01451E31DF7E000755A4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B01441E31DF7E000755A4 /* Info.plist */; };
 		8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014B1E31E089000755A4 /* LSFLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F7B014E1E31E089000755A4 /* LSFLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B014C1E31E089000755A4 /* LSFLogManager.m */; };
-		8F996C871E5290EE00988E8A /* NSString+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F996C851E5290EE00988E8A /* NSString+LSF.h */; };
+		8F996C871E5290EE00988E8A /* NSString+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F996C851E5290EE00988E8A /* NSString+LSF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F996C881E5290EE00988E8A /* NSString+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996C861E5290EE00988E8A /* NSString+LSF.m */; };
 /* End PBXBuildFile section */
 
@@ -160,13 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */,
-				8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */,
-				8F996C871E5290EE00988E8A /* NSString+LSF.h in Headers */,
 				8F450B0D1E32153A0040238E /* LSFKit.h in Headers */,
 				8F450B1D1E3217A40040238E /* LSFTableViewController.h in Headers */,
 				8F450B191E32173E0040238E /* LSFNavigationController.h in Headers */,
 				8F450B231E3218F40040238E /* NSURL+LSF.h in Headers */,
 				8F450B151E3217050040238E /* LSFViewController.h in Headers */,
+				8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */,
+				8F996C871E5290EE00988E8A /* NSString+LSF.h in Headers */,
 				8F450B0F1E3215BE0040238E /* LSFLog.h in Headers */,
 				8F450B101E3215CB0040238E /* LSF_AppMacros.h in Headers */,
 			);
@@ -356,6 +356,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = ../Framework/Debug;
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y5ZVL3285Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -374,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y5ZVL3285Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;

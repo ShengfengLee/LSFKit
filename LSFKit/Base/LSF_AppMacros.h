@@ -9,10 +9,10 @@
 #ifndef LSF_AppMacros_h
 #define LSF_AppMacros_h
 
-#ifndef TT_FIX_CATEGORY_BUG
+#ifndef LSF_FIX_CATEGORY_BUG
 ///修复category不能加载的bug
-#define BB_FIX_CATEGORY_BUG(name) @interface BB_FIX_CATEGORY_BUG_##name : NSObject @end \
-@implementation BB_FIX_CATEGORY_BUG_##name @end
+#define LSF_FIX_CATEGORY_BUG(name) @interface LSF_FIX_CATEGORY_BUG_##name : NSObject @end \
+@implementation LSF_FIX_CATEGORY_BUG_##name @end
 
 #endif
 
@@ -72,6 +72,33 @@
 ///id对象与NSData之间转换
 #define kObjectToData(object)   [NSKeyedArchiver archivedDataWithRootObject:object]
 #define kDataToObject(data)     [NSKeyedUnarchiver unarchiveObjectWithData:data]
+
+
+///单例宏定义
+//.h 文件中申明
+#define singletion_interface + (instancetype)shareInstance;
+
+// .m文件中实现
+#define singletion_implementation(class) \
+static class *_instance;    \
+\
++ (id)allocWithZone:(struct _NSZone *)zone{ \
+    static dispatch_once_t onceToken;   \
+    dispatch_once(&onceToken, ^{    \
+        _instance = [super allocWithZone:zone]; \
+    }); \
+\
+    return _instance;   \
+}   \
+\
++ (instancetype)shareInstance{   \
+    if (_instance == nil) { \
+        _instance == [[class alloc] init];  \
+    }   \
+\
+    return _instance;   \
+}
+
 
 
 #endif /* LSF_AppMacros_h */
