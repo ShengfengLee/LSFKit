@@ -10,7 +10,7 @@
 
 @implementation NSString (LSF)
 
-//清除空格
+///清除空格
 - (NSString *)lsf_stringByClearSpace{
     return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
