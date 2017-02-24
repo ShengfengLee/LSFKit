@@ -24,6 +24,7 @@
 
 #import "UIDevice+LSF.h"
 #import "UIImage+LSF.h"
+#import "UIView+LSF.h"
 
 ///Utils
 #import "LSFNetwork.h"
