@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "LSFNavigationController.h"
 
+///方向
+typedef enum : NSUInteger {
+    LSFDirectionTop,
+    LSFDirectionLeft,
+    LSFDirectionRight,
+    LSFDirectionBottom
+} LSFDirection;
+
 @interface LSFViewController : UIViewController
 
 ///是否允许右滑返回
@@ -19,5 +27,6 @@
                                       identifier:(NSString *)identifier;
 
 + (instancetype)viewControllerWithStoryboardName:(NSString *)storyboard;
+
 
 @end
