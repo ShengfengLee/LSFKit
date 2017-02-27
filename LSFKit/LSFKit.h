@@ -30,5 +30,6 @@
 ///Utils
 #import "LSFNetwork.h"
 #import "LSFCamera.h"
+#import "LSFProgressHUD.h"
 
 #endif /* LSFKit_h */
