@@ -19,6 +19,9 @@
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (nonatomic, strong) UIViewController *presentController;
 
+
+@property (nonatomic, strong) UIView *superView;
+
 - (void)show;
 
 - (void)close;

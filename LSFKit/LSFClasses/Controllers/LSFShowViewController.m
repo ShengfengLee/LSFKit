@@ -10,6 +10,7 @@
 
 @interface LSFShowViewController ()
 
+
 @property (nonatomic, strong) UIWindow *window;
 
 @end
@@ -34,12 +35,13 @@
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
+    [self.window resignKeyWindow];
 }
 
 - (void)show{
-    [self.window makeKeyAndVisible];
-    self.view.frame = self.window.bounds;
-    [self.window addSubview:self.view];
+    
+    self.view.frame = self.superView.bounds;
+    [self.superView addSubview:self.view];
     [self.presentController addChildViewController:self];
     
 }
@@ -52,7 +54,7 @@
     } completion:^(BOOL finished) {
         if (finished) {
             [self.view removeFromSuperview];
-            [self.window resignKeyWindow];
+            
             [self removeFromParentViewController];
         }
     }];
@@ -67,15 +69,25 @@
     
     UITapGestureRecognizer *backTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(close)];
     [self.backView addGestureRecognizer:backTap];
+    
+    if (!self.superView) {
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.window.windowLevel = UIWindowLevelAlert;
+        
+        [self.window makeKeyAndVisible];
+        self.superView = self.window;
+    }
 }
 
-- (UIWindow *)window{
-    if (!_window) {
-        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        _window.windowLevel = UIWindowLevelAlert;
-    }
-    return _window;
-}
+
+
+//- (UIWindow *)window{
+//    if (!_window) {
+//        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//        _window.windowLevel = UIWindowLevelAlert;
+//    }
+//    return _window;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
