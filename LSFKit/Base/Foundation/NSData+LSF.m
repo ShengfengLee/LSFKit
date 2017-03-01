@@ -45,7 +45,7 @@
     NSError *error = nil;
     
     NSString *encodingString = [[NSString alloc] initWithContentsOfFile:filePath usedEncoding:&encoding error:&error];
-    if (!error) {
+    if (!error || !encodingString) {
         return encoding;
     }
     
