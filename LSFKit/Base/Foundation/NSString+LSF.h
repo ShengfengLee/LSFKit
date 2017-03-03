@@ -29,4 +29,7 @@
 
 ///字符串中所有阿拉伯数字替换成中文字符
 -(NSString*)lsf_replaceNumberStringWhenAllDiscoverToChineseChar;
+
+///过滤HTML标签
+- (NSString *)lsf_removeHTMLtag;
 @end

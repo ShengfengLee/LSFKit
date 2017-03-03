@@ -106,4 +106,24 @@
     }
     return tmp;
 }
+
+
+///过滤HTML标签
+- (NSString *)lsf_removeHTMLtag{
+    NSString *result = self;
+    
+    NSScanner *theScanner;
+    NSString *text = nil;
+    theScanner = [NSScanner scannerWithString:result];
+    while ([theScanner isAtEnd] == NO) {
+        //find start of tag
+        [theScanner scanUpToString:@"<" intoString:NULL];
+        
+        //find end of tag
+        [theScanner scanUpToString:@">" intoString:&text];
+        
+        result = [result stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@>", text] withString:@""];
+    }
+    return result;
+}
 @end
