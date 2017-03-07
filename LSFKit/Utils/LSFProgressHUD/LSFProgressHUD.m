@@ -127,7 +127,7 @@
         
         hud.mode = MBProgressHUDModeCustomView;
         hud.customView = [[UIImageView alloc] initWithImage:image];
-        [hud hide:YES afterDelay:k_lsf_pregress_hide_afterDelay];
+        [hud hideAnimated:YES afterDelay:k_lsf_pregress_hide_afterDelay];
     }
 }
 
