@@ -36,6 +36,8 @@
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     [self.window resignKeyWindow];
+    self.window = nil;
+    
 }
 
 - (void)show{

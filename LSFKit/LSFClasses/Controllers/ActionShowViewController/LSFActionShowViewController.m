@@ -84,7 +84,18 @@ UITableViewDataSource>
     }
     
     cell.dataArray = modelArray;
-    cell.selectCompleteHandel = self.selectCompleteHandel;
+    
+    //弱引用，防止循环引用，无法释放
+    __weak typeof(self)weakSelf = self;
+    cell.selectCompleteHandel = ^(LSFActionShowModel *model){
+    
+        if (weakSelf.selectCompleteHandel) {
+            weakSelf.selectCompleteHandel(model);
+        }
+        
+        [weakSelf close];
+    };
+    
     
     return cell;
 }

@@ -30,12 +30,12 @@ singletion_implementation(LSFNetworkReachability)
     if (self) {
         _networkStatus = AFNetworkReachabilityStatusUnknown;
         
-        __block typeof(self)blockSelf = self;
+        __weak typeof(self)weakSelf = self;
         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-            blockSelf.networkStatus = status;
+            weakSelf.networkStatus = status;
             
             //发送系统通知
-            [[NSNotificationCenter defaultCenter] postNotificationName:LSFNetworkStatusChangedNotification object:[NSNumber numberWithInteger:blockSelf.networkStatus]];
+            [[NSNotificationCenter defaultCenter] postNotificationName:LSFNetworkStatusChangedNotification object:[NSNumber numberWithInteger:weakSelf.networkStatus]];
         }];
         [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     }
