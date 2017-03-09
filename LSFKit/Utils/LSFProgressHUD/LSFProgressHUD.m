@@ -59,9 +59,13 @@
 + (void)showTipMessage:(NSString *)message
               isWindow:(BOOL)isWindow
                   time:(NSTimeInterval)timeInterval{
-    LSFProgressHUD *hud = [self createProgressHUDWithMessage:message isWindow:isWindow];
-    hud.mode = MBProgressHUDModeText;
-    [hud hideAnimated:YES afterDelay:k_lsf_pregress_hide_afterDelay];
+    GCDMain(^{
+        
+        LSFProgressHUD *hud = [self createProgressHUDWithMessage:message isWindow:isWindow];
+        hud.mode = MBProgressHUDModeText;
+        [hud hideAnimated:YES afterDelay:k_lsf_pregress_hide_afterDelay];
+    });
+    
 }
 
 #pragma mark
@@ -93,11 +97,15 @@
 }
 
 + (void)showActivityMessage:(NSString *)message isWindow:(BOOL)isWidnow timeInterval:(NSTimeInterval)timeInterval{
-    LSFProgressHUD *hud = [self createProgressHUDWithMessage:message isWindow:isWidnow];
-    hud.mode = MBProgressHUDModeIndeterminate;
-    if (timeInterval > 0) {
-        [hud hideAnimated:YES afterDelay:timeInterval];
-    }
+    
+    GCDMain(^{
+        LSFProgressHUD *hud = [self createProgressHUDWithMessage:message isWindow:isWidnow];
+        hud.mode = MBProgressHUDModeIndeterminate;
+        if (timeInterval > 0) {
+            [hud hideAnimated:YES afterDelay:timeInterval];
+        }
+    });
+    
 }
 
 
