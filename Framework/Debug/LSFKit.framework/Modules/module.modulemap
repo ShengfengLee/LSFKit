@@ -1,0 +1,6 @@
+framework module LSFKit {
+  umbrella header "LSFKit.h"
+
+  export *
+  module * { export * }
+}
