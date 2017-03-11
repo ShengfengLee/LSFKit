@@ -7,47 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F1639BD1E33031E0058B0C0 /* NSData+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1639BB1E33031E0058B0C0 /* NSData+LSF.m */; };
-		8F450B0D1E32153A0040238E /* LSFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B0C1E32153A0040238E /* LSFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F450B0F1E3215BE0040238E /* LSFLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014A1E31DFEE000755A4 /* LSFLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F450B101E3215CB0040238E /* LSF_AppMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B0E1E3215820040238E /* LSF_AppMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F450B151E3217050040238E /* LSFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B131E3217050040238E /* LSFViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F450B161E3217050040238E /* LSFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F450B141E3217050040238E /* LSFViewController.m */; };
-		8F450B191E32173E0040238E /* LSFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B171E32173E0040238E /* LSFNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F450B1A1E32173E0040238E /* LSFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F450B181E32173E0040238E /* LSFNavigationController.m */; };
-		8F450B1D1E3217A40040238E /* LSFTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B1B1E3217A40040238E /* LSFTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F450B1E1E3217A40040238E /* LSFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F450B1C1E3217A40040238E /* LSFTableViewController.m */; };
-		8F450B231E3218F40040238E /* NSURL+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F450B211E3218F40040238E /* NSURL+LSF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F450B241E3218F40040238E /* NSURL+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F450B221E3218F40040238E /* NSURL+LSF.m */; };
 		8F7B01451E31DF7E000755A4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B01441E31DF7E000755A4 /* Info.plist */; };
-		8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7B014B1E31E089000755A4 /* LSFLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F7B014E1E31E089000755A4 /* LSFLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B014C1E31E089000755A4 /* LSFLogManager.m */; };
-		8F996C871E5290EE00988E8A /* NSString+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F996C851E5290EE00988E8A /* NSString+LSF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F996C881E5290EE00988E8A /* NSString+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996C861E5290EE00988E8A /* NSString+LSF.m */; };
+		8FFCE92F1E74242E0036D490 /* NSData+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8EE1E74242E0036D490 /* NSData+LSF.h */; };
+		8FFCE9301E74242E0036D490 /* NSData+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE8EF1E74242E0036D490 /* NSData+LSF.m */; };
+		8FFCE9311E74242E0036D490 /* NSDate+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8F01E74242E0036D490 /* NSDate+LSF.h */; };
+		8FFCE9321E74242E0036D490 /* NSDate+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE8F11E74242E0036D490 /* NSDate+LSF.m */; };
+		8FFCE9331E74242E0036D490 /* NSObject+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8F21E74242E0036D490 /* NSObject+LSF.h */; };
+		8FFCE9341E74242E0036D490 /* NSObject+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE8F31E74242E0036D490 /* NSObject+LSF.m */; };
+		8FFCE9351E74242E0036D490 /* NSString+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8F41E74242E0036D490 /* NSString+LSF.h */; };
+		8FFCE9361E74242E0036D490 /* NSString+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE8F51E74242E0036D490 /* NSString+LSF.m */; };
+		8FFCE9371E74242E0036D490 /* NSURL+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8F61E74242E0036D490 /* NSURL+LSF.h */; };
+		8FFCE9381E74242E0036D490 /* NSURL+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE8F71E74242E0036D490 /* NSURL+LSF.m */; };
+		8FFCE9391E74242E0036D490 /* LSFLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8F91E74242E0036D490 /* LSFLog.h */; };
+		8FFCE93A1E74242E0036D490 /* LSFLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8FA1E74242E0036D490 /* LSFLogManager.h */; };
+		8FFCE93B1E74242E0036D490 /* LSFLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE8FB1E74242E0036D490 /* LSFLogManager.m */; };
+		8FFCE93C1E74242E0036D490 /* LSF_AppMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8FC1E74242E0036D490 /* LSF_AppMacros.h */; };
+		8FFCE93D1E74242E0036D490 /* UIDevice+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE8FE1E74242E0036D490 /* UIDevice+LSF.h */; };
+		8FFCE93E1E74242E0036D490 /* UIDevice+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE8FF1E74242E0036D490 /* UIDevice+LSF.m */; };
+		8FFCE93F1E74242E0036D490 /* UIImage+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9001E74242E0036D490 /* UIImage+LSF.h */; };
+		8FFCE9401E74242E0036D490 /* UIImage+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE9011E74242E0036D490 /* UIImage+LSF.m */; };
+		8FFCE9411E74242E0036D490 /* UIView+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9021E74242E0036D490 /* UIView+LSF.h */; };
+		8FFCE9421E74242E0036D490 /* UIView+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE9031E74242E0036D490 /* UIView+LSF.m */; };
+		8FFCE9431E74242E0036D490 /* UIViewController+LSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9041E74242E0036D490 /* UIViewController+LSF.h */; };
+		8FFCE9441E74242E0036D490 /* UIViewController+LSF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE9051E74242E0036D490 /* UIViewController+LSF.m */; };
+		8FFCE9451E74242E0036D490 /* LSFActionShowModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9091E74242E0036D490 /* LSFActionShowModel.h */; };
+		8FFCE9461E74242E0036D490 /* LSFActionShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE90A1E74242E0036D490 /* LSFActionShowModel.m */; };
+		8FFCE9471E74242E0036D490 /* LSFActionShowViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE90B1E74242E0036D490 /* LSFActionShowViewController.h */; };
+		8FFCE9481E74242E0036D490 /* LSFActionShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE90C1E74242E0036D490 /* LSFActionShowViewController.m */; };
+		8FFCE9491E74242E0036D490 /* LSFActionShowCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE90E1E74242E0036D490 /* LSFActionShowCollectionViewCell.h */; };
+		8FFCE94A1E74242E0036D490 /* LSFActionShowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE90F1E74242E0036D490 /* LSFActionShowCollectionViewCell.m */; };
+		8FFCE94B1E74242E0036D490 /* LSFActionShowTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9101E74242E0036D490 /* LSFActionShowTableViewCell.h */; };
+		8FFCE94C1E74242E0036D490 /* LSFActionShowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE9111E74242E0036D490 /* LSFActionShowTableViewCell.m */; };
+		8FFCE94D1E74242E0036D490 /* LSFActionShowViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFCE9121E74242E0036D490 /* LSFActionShowViewController.storyboard */; };
+		8FFCE9501E74242E0036D490 /* LSFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9151E74242E0036D490 /* LSFNavigationController.h */; };
+		8FFCE9511E74242E0036D490 /* LSFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE9161E74242E0036D490 /* LSFNavigationController.m */; };
+		8FFCE9521E74242E0036D490 /* LSFShowViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9171E74242E0036D490 /* LSFShowViewController.h */; };
+		8FFCE9531E74242E0036D490 /* LSFShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE9181E74242E0036D490 /* LSFShowViewController.m */; };
+		8FFCE9541E74242E0036D490 /* LSFTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9191E74242E0036D490 /* LSFTableViewController.h */; };
+		8FFCE9551E74242E0036D490 /* LSFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE91A1E74242E0036D490 /* LSFTableViewController.m */; };
+		8FFCE9561E74242E0036D490 /* LSFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE91B1E74242E0036D490 /* LSFViewController.h */; };
+		8FFCE9571E74242E0036D490 /* LSFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE91C1E74242E0036D490 /* LSFViewController.m */; };
+		8FFCE95A1E74242E0036D490 /* LSFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE9201E74242E0036D490 /* LSFKit.h */; };
+		8FFCE9611E74242E0036D490 /* LSFCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFCE92A1E74242E0036D490 /* LSFCamera.h */; };
+		8FFCE9621E74242E0036D490 /* LSFCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCE92B1E74242E0036D490 /* LSFCamera.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LSF.h"; sourceTree = "<group>"; };
-		8F1639BB1E33031E0058B0C0 /* NSData+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LSF.m"; sourceTree = "<group>"; };
-		8F450B0C1E32153A0040238E /* LSFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFKit.h; sourceTree = "<group>"; };
-		8F450B0E1E3215820040238E /* LSF_AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSF_AppMacros.h; sourceTree = "<group>"; };
-		8F450B131E3217050040238E /* LSFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFViewController.h; sourceTree = "<group>"; };
-		8F450B141E3217050040238E /* LSFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFViewController.m; sourceTree = "<group>"; };
-		8F450B171E32173E0040238E /* LSFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFNavigationController.h; sourceTree = "<group>"; };
-		8F450B181E32173E0040238E /* LSFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFNavigationController.m; sourceTree = "<group>"; };
-		8F450B1B1E3217A40040238E /* LSFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFTableViewController.h; sourceTree = "<group>"; };
-		8F450B1C1E3217A40040238E /* LSFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFTableViewController.m; sourceTree = "<group>"; };
-		8F450B211E3218F40040238E /* NSURL+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LSF.h"; sourceTree = "<group>"; };
-		8F450B221E3218F40040238E /* NSURL+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LSF.m"; sourceTree = "<group>"; };
 		8F7B01391E31DEF2000755A4 /* LSFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LSFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7B01441E31DF7E000755A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F7B014A1E31DFEE000755A4 /* LSFLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFLog.h; sourceTree = "<group>"; };
-		8F7B014B1E31E089000755A4 /* LSFLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFLogManager.h; sourceTree = "<group>"; };
-		8F7B014C1E31E089000755A4 /* LSFLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFLogManager.m; sourceTree = "<group>"; };
 		8F996C841E528DB800988E8A /* LSFKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = LSFKit.podspec; path = ../LSFKit.podspec; sourceTree = "<group>"; };
-		8F996C851E5290EE00988E8A /* NSString+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LSF.h"; sourceTree = "<group>"; };
-		8F996C861E5290EE00988E8A /* NSString+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSF.m"; sourceTree = "<group>"; };
+		8FFCE8EE1E74242E0036D490 /* NSData+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LSF.h"; sourceTree = "<group>"; };
+		8FFCE8EF1E74242E0036D490 /* NSData+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LSF.m"; sourceTree = "<group>"; };
+		8FFCE8F01E74242E0036D490 /* NSDate+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LSF.h"; sourceTree = "<group>"; };
+		8FFCE8F11E74242E0036D490 /* NSDate+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LSF.m"; sourceTree = "<group>"; };
+		8FFCE8F21E74242E0036D490 /* NSObject+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LSF.h"; sourceTree = "<group>"; };
+		8FFCE8F31E74242E0036D490 /* NSObject+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LSF.m"; sourceTree = "<group>"; };
+		8FFCE8F41E74242E0036D490 /* NSString+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LSF.h"; sourceTree = "<group>"; };
+		8FFCE8F51E74242E0036D490 /* NSString+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSF.m"; sourceTree = "<group>"; };
+		8FFCE8F61E74242E0036D490 /* NSURL+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LSF.h"; sourceTree = "<group>"; };
+		8FFCE8F71E74242E0036D490 /* NSURL+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LSF.m"; sourceTree = "<group>"; };
+		8FFCE8F91E74242E0036D490 /* LSFLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFLog.h; sourceTree = "<group>"; };
+		8FFCE8FA1E74242E0036D490 /* LSFLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFLogManager.h; sourceTree = "<group>"; };
+		8FFCE8FB1E74242E0036D490 /* LSFLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFLogManager.m; sourceTree = "<group>"; };
+		8FFCE8FC1E74242E0036D490 /* LSF_AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSF_AppMacros.h; sourceTree = "<group>"; };
+		8FFCE8FE1E74242E0036D490 /* UIDevice+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LSF.h"; sourceTree = "<group>"; };
+		8FFCE8FF1E74242E0036D490 /* UIDevice+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LSF.m"; sourceTree = "<group>"; };
+		8FFCE9001E74242E0036D490 /* UIImage+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LSF.h"; sourceTree = "<group>"; };
+		8FFCE9011E74242E0036D490 /* UIImage+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LSF.m"; sourceTree = "<group>"; };
+		8FFCE9021E74242E0036D490 /* UIView+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LSF.h"; sourceTree = "<group>"; };
+		8FFCE9031E74242E0036D490 /* UIView+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSF.m"; sourceTree = "<group>"; };
+		8FFCE9041E74242E0036D490 /* UIViewController+LSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LSF.h"; sourceTree = "<group>"; };
+		8FFCE9051E74242E0036D490 /* UIViewController+LSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LSF.m"; sourceTree = "<group>"; };
+		8FFCE9091E74242E0036D490 /* LSFActionShowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFActionShowModel.h; sourceTree = "<group>"; };
+		8FFCE90A1E74242E0036D490 /* LSFActionShowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFActionShowModel.m; sourceTree = "<group>"; };
+		8FFCE90B1E74242E0036D490 /* LSFActionShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFActionShowViewController.h; sourceTree = "<group>"; };
+		8FFCE90C1E74242E0036D490 /* LSFActionShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFActionShowViewController.m; sourceTree = "<group>"; };
+		8FFCE90E1E74242E0036D490 /* LSFActionShowCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFActionShowCollectionViewCell.h; sourceTree = "<group>"; };
+		8FFCE90F1E74242E0036D490 /* LSFActionShowCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFActionShowCollectionViewCell.m; sourceTree = "<group>"; };
+		8FFCE9101E74242E0036D490 /* LSFActionShowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFActionShowTableViewCell.h; sourceTree = "<group>"; };
+		8FFCE9111E74242E0036D490 /* LSFActionShowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFActionShowTableViewCell.m; sourceTree = "<group>"; };
+		8FFCE9121E74242E0036D490 /* LSFActionShowViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LSFActionShowViewController.storyboard; sourceTree = "<group>"; };
+		8FFCE9151E74242E0036D490 /* LSFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFNavigationController.h; sourceTree = "<group>"; };
+		8FFCE9161E74242E0036D490 /* LSFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFNavigationController.m; sourceTree = "<group>"; };
+		8FFCE9171E74242E0036D490 /* LSFShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFShowViewController.h; sourceTree = "<group>"; };
+		8FFCE9181E74242E0036D490 /* LSFShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFShowViewController.m; sourceTree = "<group>"; };
+		8FFCE9191E74242E0036D490 /* LSFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFTableViewController.h; sourceTree = "<group>"; };
+		8FFCE91A1E74242E0036D490 /* LSFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFTableViewController.m; sourceTree = "<group>"; };
+		8FFCE91B1E74242E0036D490 /* LSFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFViewController.h; sourceTree = "<group>"; };
+		8FFCE91C1E74242E0036D490 /* LSFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFViewController.m; sourceTree = "<group>"; };
+		8FFCE9201E74242E0036D490 /* LSFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFKit.h; sourceTree = "<group>"; };
+		8FFCE92A1E74242E0036D490 /* LSFCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFCamera.h; sourceTree = "<group>"; };
+		8FFCE92B1E74242E0036D490 /* LSFCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFCamera.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,51 +111,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F450B111E3216F70040238E /* LSFClasses */ = {
-			isa = PBXGroup;
-			children = (
-				8F450B121E3216F70040238E /* Controllers */,
-			);
-			path = LSFClasses;
-			sourceTree = "<group>";
-		};
-		8F450B121E3216F70040238E /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				8F450B131E3217050040238E /* LSFViewController.h */,
-				8F450B141E3217050040238E /* LSFViewController.m */,
-				8F450B171E32173E0040238E /* LSFNavigationController.h */,
-				8F450B181E32173E0040238E /* LSFNavigationController.m */,
-				8F450B1B1E3217A40040238E /* LSFTableViewController.h */,
-				8F450B1C1E3217A40040238E /* LSFTableViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		8F450B1F1E3218CF0040238E /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				8F450B211E3218F40040238E /* NSURL+LSF.h */,
-				8F450B221E3218F40040238E /* NSURL+LSF.m */,
-				8F1639BA1E33031E0058B0C0 /* NSData+LSF.h */,
-				8F1639BB1E33031E0058B0C0 /* NSData+LSF.m */,
-				8F996C851E5290EE00988E8A /* NSString+LSF.h */,
-				8F996C861E5290EE00988E8A /* NSString+LSF.m */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		8F450B201E3218CF0040238E /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
 		8F7B012F1E31DEF2000755A4 = {
 			isa = PBXGroup;
 			children = (
-				8F7B01461E31DFB7000755A4 /* LSFKit */,
+				8FFCE8EB1E74242E0036D490 /* LSFKit */,
 				8F7B01441E31DF7E000755A4 /* Info.plist */,
 				8F996C841E528DB800988E8A /* LSFKit.podspec */,
 				8F7B013A1E31DEF2000755A4 /* Products */,
@@ -120,36 +129,141 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F7B01461E31DFB7000755A4 /* LSFKit */ = {
+		8FFCE8EB1E74242E0036D490 /* LSFKit */ = {
 			isa = PBXGroup;
 			children = (
-				8F450B0C1E32153A0040238E /* LSFKit.h */,
-				8F450B111E3216F70040238E /* LSFClasses */,
-				8F7B01471E31DFB7000755A4 /* Base */,
+				8FFCE8EC1E74242E0036D490 /* Base */,
+				8FFCE9061E74242E0036D490 /* LSFClasses */,
+				8FFCE9201E74242E0036D490 /* LSFKit.h */,
+				8FFCE9281E74242E0036D490 /* Utils */,
 			);
-			name = LSFKit;
-			path = ../LSFKit;
+			path = LSFKit;
 			sourceTree = "<group>";
 		};
-		8F7B01471E31DFB7000755A4 /* Base */ = {
+		8FFCE8EC1E74242E0036D490 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				8F450B1F1E3218CF0040238E /* Foundation */,
-				8F450B201E3218CF0040238E /* UIKit */,
-				8F7B01481E31DFB7000755A4 /* Log */,
-				8F450B0E1E3215820040238E /* LSF_AppMacros.h */,
+				8FFCE8ED1E74242E0036D490 /* Foundation */,
+				8FFCE8F81E74242E0036D490 /* Log */,
+				8FFCE8FC1E74242E0036D490 /* LSF_AppMacros.h */,
+				8FFCE8FD1E74242E0036D490 /* UIKit */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		8F7B01481E31DFB7000755A4 /* Log */ = {
+		8FFCE8ED1E74242E0036D490 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				8F7B014A1E31DFEE000755A4 /* LSFLog.h */,
-				8F7B014B1E31E089000755A4 /* LSFLogManager.h */,
-				8F7B014C1E31E089000755A4 /* LSFLogManager.m */,
+				8FFCE8EE1E74242E0036D490 /* NSData+LSF.h */,
+				8FFCE8EF1E74242E0036D490 /* NSData+LSF.m */,
+				8FFCE8F01E74242E0036D490 /* NSDate+LSF.h */,
+				8FFCE8F11E74242E0036D490 /* NSDate+LSF.m */,
+				8FFCE8F21E74242E0036D490 /* NSObject+LSF.h */,
+				8FFCE8F31E74242E0036D490 /* NSObject+LSF.m */,
+				8FFCE8F41E74242E0036D490 /* NSString+LSF.h */,
+				8FFCE8F51E74242E0036D490 /* NSString+LSF.m */,
+				8FFCE8F61E74242E0036D490 /* NSURL+LSF.h */,
+				8FFCE8F71E74242E0036D490 /* NSURL+LSF.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8FFCE8F81E74242E0036D490 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE8F91E74242E0036D490 /* LSFLog.h */,
+				8FFCE8FA1E74242E0036D490 /* LSFLogManager.h */,
+				8FFCE8FB1E74242E0036D490 /* LSFLogManager.m */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		8FFCE8FD1E74242E0036D490 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE8FE1E74242E0036D490 /* UIDevice+LSF.h */,
+				8FFCE8FF1E74242E0036D490 /* UIDevice+LSF.m */,
+				8FFCE9001E74242E0036D490 /* UIImage+LSF.h */,
+				8FFCE9011E74242E0036D490 /* UIImage+LSF.m */,
+				8FFCE9021E74242E0036D490 /* UIView+LSF.h */,
+				8FFCE9031E74242E0036D490 /* UIView+LSF.m */,
+				8FFCE9041E74242E0036D490 /* UIViewController+LSF.h */,
+				8FFCE9051E74242E0036D490 /* UIViewController+LSF.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8FFCE9061E74242E0036D490 /* LSFClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE9071E74242E0036D490 /* Controllers */,
+				8FFCE91D1E74242E0036D490 /* Views */,
+			);
+			path = LSFClasses;
+			sourceTree = "<group>";
+		};
+		8FFCE9071E74242E0036D490 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE9081E74242E0036D490 /* ActionShowViewController */,
+				8FFCE9151E74242E0036D490 /* LSFNavigationController.h */,
+				8FFCE9161E74242E0036D490 /* LSFNavigationController.m */,
+				8FFCE9171E74242E0036D490 /* LSFShowViewController.h */,
+				8FFCE9181E74242E0036D490 /* LSFShowViewController.m */,
+				8FFCE9191E74242E0036D490 /* LSFTableViewController.h */,
+				8FFCE91A1E74242E0036D490 /* LSFTableViewController.m */,
+				8FFCE91B1E74242E0036D490 /* LSFViewController.h */,
+				8FFCE91C1E74242E0036D490 /* LSFViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8FFCE9081E74242E0036D490 /* ActionShowViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE9091E74242E0036D490 /* LSFActionShowModel.h */,
+				8FFCE90A1E74242E0036D490 /* LSFActionShowModel.m */,
+				8FFCE90B1E74242E0036D490 /* LSFActionShowViewController.h */,
+				8FFCE90C1E74242E0036D490 /* LSFActionShowViewController.m */,
+				8FFCE90D1E74242E0036D490 /* View */,
+			);
+			path = ActionShowViewController;
+			sourceTree = "<group>";
+		};
+		8FFCE90D1E74242E0036D490 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE90E1E74242E0036D490 /* LSFActionShowCollectionViewCell.h */,
+				8FFCE90F1E74242E0036D490 /* LSFActionShowCollectionViewCell.m */,
+				8FFCE9101E74242E0036D490 /* LSFActionShowTableViewCell.h */,
+				8FFCE9111E74242E0036D490 /* LSFActionShowTableViewCell.m */,
+				8FFCE9121E74242E0036D490 /* LSFActionShowViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FFCE91D1E74242E0036D490 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8FFCE9281E74242E0036D490 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE9291E74242E0036D490 /* Camera */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8FFCE9291E74242E0036D490 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8FFCE92A1E74242E0036D490 /* LSFCamera.h */,
+				8FFCE92B1E74242E0036D490 /* LSFCamera.m */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,16 +273,28 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7B014D1E31E089000755A4 /* LSFLogManager.h in Headers */,
-				8F450B0D1E32153A0040238E /* LSFKit.h in Headers */,
-				8F450B1D1E3217A40040238E /* LSFTableViewController.h in Headers */,
-				8F450B191E32173E0040238E /* LSFNavigationController.h in Headers */,
-				8F450B231E3218F40040238E /* NSURL+LSF.h in Headers */,
-				8F450B151E3217050040238E /* LSFViewController.h in Headers */,
-				8F1639BC1E33031E0058B0C0 /* NSData+LSF.h in Headers */,
-				8F996C871E5290EE00988E8A /* NSString+LSF.h in Headers */,
-				8F450B0F1E3215BE0040238E /* LSFLog.h in Headers */,
-				8F450B101E3215CB0040238E /* LSF_AppMacros.h in Headers */,
+				8FFCE9351E74242E0036D490 /* NSString+LSF.h in Headers */,
+				8FFCE9331E74242E0036D490 /* NSObject+LSF.h in Headers */,
+				8FFCE9501E74242E0036D490 /* LSFNavigationController.h in Headers */,
+				8FFCE9371E74242E0036D490 /* NSURL+LSF.h in Headers */,
+				8FFCE9411E74242E0036D490 /* UIView+LSF.h in Headers */,
+				8FFCE9391E74242E0036D490 /* LSFLog.h in Headers */,
+				8FFCE9541E74242E0036D490 /* LSFTableViewController.h in Headers */,
+				8FFCE9431E74242E0036D490 /* UIViewController+LSF.h in Headers */,
+				8FFCE9521E74242E0036D490 /* LSFShowViewController.h in Headers */,
+				8FFCE9451E74242E0036D490 /* LSFActionShowModel.h in Headers */,
+				8FFCE9611E74242E0036D490 /* LSFCamera.h in Headers */,
+				8FFCE93A1E74242E0036D490 /* LSFLogManager.h in Headers */,
+				8FFCE92F1E74242E0036D490 /* NSData+LSF.h in Headers */,
+				8FFCE95A1E74242E0036D490 /* LSFKit.h in Headers */,
+				8FFCE94B1E74242E0036D490 /* LSFActionShowTableViewCell.h in Headers */,
+				8FFCE9311E74242E0036D490 /* NSDate+LSF.h in Headers */,
+				8FFCE9471E74242E0036D490 /* LSFActionShowViewController.h in Headers */,
+				8FFCE93D1E74242E0036D490 /* UIDevice+LSF.h in Headers */,
+				8FFCE9561E74242E0036D490 /* LSFViewController.h in Headers */,
+				8FFCE93F1E74242E0036D490 /* UIImage+LSF.h in Headers */,
+				8FFCE9491E74242E0036D490 /* LSFActionShowCollectionViewCell.h in Headers */,
+				8FFCE93C1E74242E0036D490 /* LSF_AppMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFCE94D1E74242E0036D490 /* LSFActionShowViewController.storyboard in Resources */,
 				8F7B01451E31DF7E000755A4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,13 +370,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F450B161E3217050040238E /* LSFViewController.m in Sources */,
-				8F7B014E1E31E089000755A4 /* LSFLogManager.m in Sources */,
-				8F996C881E5290EE00988E8A /* NSString+LSF.m in Sources */,
-				8F1639BD1E33031E0058B0C0 /* NSData+LSF.m in Sources */,
-				8F450B241E3218F40040238E /* NSURL+LSF.m in Sources */,
-				8F450B1A1E32173E0040238E /* LSFNavigationController.m in Sources */,
-				8F450B1E1E3217A40040238E /* LSFTableViewController.m in Sources */,
+				8FFCE9461E74242E0036D490 /* LSFActionShowModel.m in Sources */,
+				8FFCE9551E74242E0036D490 /* LSFTableViewController.m in Sources */,
+				8FFCE93B1E74242E0036D490 /* LSFLogManager.m in Sources */,
+				8FFCE94C1E74242E0036D490 /* LSFActionShowTableViewCell.m in Sources */,
+				8FFCE94A1E74242E0036D490 /* LSFActionShowCollectionViewCell.m in Sources */,
+				8FFCE9401E74242E0036D490 /* UIImage+LSF.m in Sources */,
+				8FFCE9321E74242E0036D490 /* NSDate+LSF.m in Sources */,
+				8FFCE9361E74242E0036D490 /* NSString+LSF.m in Sources */,
+				8FFCE9571E74242E0036D490 /* LSFViewController.m in Sources */,
+				8FFCE9441E74242E0036D490 /* UIViewController+LSF.m in Sources */,
+				8FFCE93E1E74242E0036D490 /* UIDevice+LSF.m in Sources */,
+				8FFCE9531E74242E0036D490 /* LSFShowViewController.m in Sources */,
+				8FFCE9481E74242E0036D490 /* LSFActionShowViewController.m in Sources */,
+				8FFCE9421E74242E0036D490 /* UIView+LSF.m in Sources */,
+				8FFCE9381E74242E0036D490 /* NSURL+LSF.m in Sources */,
+				8FFCE9341E74242E0036D490 /* NSObject+LSF.m in Sources */,
+				8FFCE9511E74242E0036D490 /* LSFNavigationController.m in Sources */,
+				8FFCE9621E74242E0036D490 /* LSFCamera.m in Sources */,
+				8FFCE9301E74242E0036D490 /* NSData+LSF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@
     }
     
     LSFProgressHUD *hud = [LSFProgressHUD showHUDAddedTo:view animated:YES];
-    hud.label.text = message;
+    hud.label.text = message ? message : @"Loading...";
     hud.label.font = [UIFont systemFontOfSize:15];
     hud.removeFromSuperViewOnHide = YES;
     hud.dimBackground = NO;
