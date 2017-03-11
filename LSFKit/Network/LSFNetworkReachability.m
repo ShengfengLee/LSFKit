@@ -28,7 +28,7 @@ singletion_implementation(LSFNetworkReachability)
 {
     self = [super init];
     if (self) {
-        _networkStatus = AFNetworkReachabilityStatusUnknown;
+        _networkStatus = AFNetworkReachabilityStatusReachableViaWWAN;
         
         __weak typeof(self)weakSelf = self;
         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {

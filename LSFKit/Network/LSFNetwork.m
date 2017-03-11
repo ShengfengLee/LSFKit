@@ -104,6 +104,56 @@ singletion_implementation(LSFNetwork)
 
 }
 
+
+/**
+ 发送GET网络请求
+ 
+ @param urlStr 网址URL
+ @param parameters 参数列表
+ @param uploadProgress 任务完成进度
+ @param success 成功
+ @param failure 失败
+ @return POST请求任务
+ */
+- (NSURLSessionDataTask *)GET:(NSString *)urlStr
+                   parameters:(NSDictionary *)parameters
+                     progress:(void (^)(NSProgress *))uploadProgress
+                      success:(LSFSuccessResponse)success
+                      failure:(LSFFailureResponse)failure{
+    if (![self checkNetworkStatus:failure]) {
+        return nil;
+    }
+    
+    //去空值
+    parameters = [LSFNetwork removeNilValue:parameters];
+    
+    //网络请求计数+1
+    self.requestCount++;
+    
+    NSURLSessionDataTask *task = [self.sessionManager GET:urlStr parameters:parameters progress:uploadProgress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary *responseDic = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                                    options:NSJSONReadingAllowFragments
+                                                                      error:nil];
+        if (![responseDic lsf_isNull] && [responseDic isKindOfClass:[NSDictionary class]]) {
+            
+            if (success) {
+                success(nil, responseDic);
+            }
+        }
+        
+        self.requestCount--;
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //网络错误
+        if (failure) {
+            failure(error.code, error.localizedDescription);
+        }
+        self.requestCount--;
+    }];
+    
+    return task;
+    
+}
+
 /**
  *  去除空值的方法
  *

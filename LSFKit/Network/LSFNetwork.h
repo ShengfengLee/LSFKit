@@ -64,4 +64,19 @@ singletion_interface
                        success:(LSFSuccessResponse)success
                        failure:(LSFFailureResponse)failure;
 
+/**
+ 发送GET网络请求
+ 
+ @param urlStr 网址URL
+ @param parameters 参数列表
+ @param uploadProgress 任务完成进度
+ @param success 成功
+ @param failure 失败
+ @return POST请求任务
+ */
+- (NSURLSessionDataTask *)GET:(NSString *)urlStr
+                   parameters:(NSDictionary *)parameters
+                     progress:(void (^)(NSProgress *))uploadProgress
+                      success:(LSFSuccessResponse)success
+                      failure:(LSFFailureResponse)failure;
 @end
