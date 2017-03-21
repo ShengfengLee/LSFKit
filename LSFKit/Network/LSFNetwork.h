@@ -45,7 +45,9 @@ typedef void (^ LSFProgressResponse)(NSProgress *progress);
 
 @property (nonatomic, strong) LSFNetworkConfig *config;
 
-singletion_interface
+
++ (instancetype)shareInstance;
+//singletion_interface
 
 
 /**

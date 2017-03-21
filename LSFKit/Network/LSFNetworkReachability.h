@@ -14,7 +14,8 @@ extern NSString *const LSFNetworkStatusChangedNotification;
 @interface LSFNetworkReachability : NSObject
 
 
-singletion_interface;
+//singletion_interface;
++ (instancetype)shareInstance;
 
 
 /**

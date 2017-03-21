@@ -24,7 +24,8 @@
 @property (nonatomic, copy) NSString *cerFilePath;
 @property (nonatomic, copy, readonly) AFSecurityPolicy *securityPolicy;
 
-singletion_interface;
+//singletion_interface;
++ (instancetype)shareInstance;
 
 
 @end
