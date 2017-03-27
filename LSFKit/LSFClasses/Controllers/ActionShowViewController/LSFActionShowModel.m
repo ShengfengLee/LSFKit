@@ -26,7 +26,7 @@
             
         case LSFActionShowType_Bookmark:
         {
-            model.name = @"Book";
+            model.name = @"Bookmark";
             model.iconImageName = @"share_bookmark";
             break;
         }
