@@ -107,7 +107,7 @@ singletion_implementation(LSFNetworkConfig)
     _cerFilePath = cerFilePath;
     self.securityPolicy = nil;
     
-    if (_cerFilePath) {
+    if (!_cerFilePath) {
         return;
     }
     
@@ -125,6 +125,7 @@ singletion_implementation(LSFNetworkConfig)
     self.securityPolicy.pinnedCertificates = set;
     
 }
+
 
 
 @end
