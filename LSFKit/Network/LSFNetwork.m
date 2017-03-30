@@ -177,7 +177,7 @@ singletion_implementation(LSFNetwork)
     if (![LSFNetworkReachability isReachable]) {
         
         if (failure) {
-            NSString *message = @"网络不给力，请检查网络连接";
+            NSString *message = @"Network error!";
             failure(0, message);
         }
         return NO;
