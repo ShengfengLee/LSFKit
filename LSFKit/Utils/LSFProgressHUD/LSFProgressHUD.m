@@ -12,6 +12,8 @@
 
 @implementation LSFProgressHUD
 
+static LSFProgressHUD *shareHUD;
+
 + (instancetype)createProgressHUDWithMessage:(NSString *)message isWindow:(BOOL)isWindow{
     UIView *view;
     if (isWindow) {
@@ -21,13 +23,48 @@
         view = [self getCurrentUIVC].view;
     }
     
-    LSFProgressHUD *hud = [LSFProgressHUD showHUDAddedTo:view animated:YES];
-    hud.label.text = message;
-    hud.label.font = [UIFont systemFontOfSize:15];
-    hud.removeFromSuperViewOnHide = YES;
-    hud.dimBackground = NO;
-    return hud;
+    return [self hudInView:view message:message];
 }
+
++ (instancetype)hudInView:(UIView *)view message:(NSString *)message{
+    if (!view) {
+        view = [UIApplication sharedApplication].keyWindow;
+    }
+    
+    [self lsf_hideHUD];
+    
+    shareHUD = [LSFProgressHUD showHUDAddedTo:view animated:YES];
+    shareHUD.label.text = message;
+    shareHUD.label.font = [UIFont systemFontOfSize:15];
+    shareHUD.removeFromSuperViewOnHide = YES;
+    shareHUD.dimBackground = NO;
+    return shareHUD;
+}
+
++ (void)lsf_showActivityInView:(UIView *)view{
+    GCDMain(^{
+        LSFProgressHUD *hud = [self hudInView:view message:nil];
+        hud.mode = MBProgressHUDModeIndeterminate;
+    });
+}
+
++ (void)lsf_showActivity{
+    [self lsf_showActivityMessageInView:nil];
+}
+
+
++ (void)lsf_hideHUD:(BOOL)animate{
+    if (shareHUD) {
+        shareHUD.removeFromSuperViewOnHide = YES;
+        [shareHUD hideAnimated:animate];
+        shareHUD = nil;
+    }
+}
+
++ (void)lsf_hideHUD{
+    [self lsf_hideHUD:NO];
+}
+
 
 #pragma mark
 #pragma mark - show Tip
@@ -139,13 +176,6 @@
     }
 }
 
-
-+ (void)lsf_hideHUD{
-    UIView  *winView =(UIView *)[UIApplication sharedApplication].delegate.window;
-    [self hideHUDForView:winView animated:YES];
-    [self hideHUDForView:[self getCurrentUIVC].view animated:YES];
-
-}
 
 
 //获取当前屏幕显示的viewcontroller

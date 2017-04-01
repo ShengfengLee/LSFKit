@@ -10,6 +10,10 @@
 
 @interface LSFProgressHUD : MBProgressHUD
 
+
++ (void)lsf_showActivityInView:(UIView *)view;
++ (void)lsf_showActivity;
+
 + (void)lsf_showTipMessageInWindow:(NSString *)message;
 + (void)lsf_showTipMessageInView:(NSString *)message;
 + (void)lsf_showTipMessageInWindow:(NSString *)message timeInterval:(NSTimeInterval)timeInterval;
